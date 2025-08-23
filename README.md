@@ -26,6 +26,22 @@ MLSA-UET-Internship/
 │       │── week-01.md            
 │       │── task-01.md         
 │       └── assets/             # Screenshots for cloud tasks
+│   │── Week-02/
+│       │── week-02.md
+│       │── Azure_Fundamentals_Learn-path/
+│          │── az-funda-learn-path.md
+│          │── module-01.md
+│          │── module-02.md
+│          │── module-03.md
+│          │── module-04.md
+│          │── module-05.md           
+│       │── project-01/
+│          │── project.md
+│          │── Function_Code/
+│             │── functioncode.md 
+│          │── App_Servicce/
+│             │── appservice.md           
+│       └── assets/             # Screenshots for cloud tasks
 │
 ├── Cybersecurity/             # Cybersecurity tasks & notes
 │   │── Task-01.md             # Example: Nmap Scanning
