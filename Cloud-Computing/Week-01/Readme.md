@@ -60,7 +60,7 @@ Instead of owning physical hardware, you can rent resources from cloud providers
    - Rebuilt it using **HTML + CSS** for clean and responsive design.  
 
 3. **Uploaded to GitHub**  
-   - Pushed project files (`index.html`, `style.css`) into a **public repository**.  
+   - Pushed project files (`index.html`) into a **public repository**.  
 
 4. **Deployed on Azure Static Web Apps**  
    - Linked my GitHub repo with Azure Static Web Apps.  
@@ -77,7 +77,7 @@ Instead of owning physical hardware, you can rent resources from cloud providers
 ---
 
 ### 📸 Screenshots  
-(Save screenshots in the `assets/` folder and link them here)  
+(Save screenshots in the `assets/` folder)  
 
 - Azure Free Credit Activation  
 - GitHub repo upload  
