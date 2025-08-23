@@ -38,7 +38,7 @@ Instead of owning physical hardware, you can rent resources from cloud providers
 
 ---
 
-## 🛠️ Task-01 – Getting Started with Azure  
+## 🛠️[ Task-01 – Getting Started with Azure](https://github.com/malaikatariq/resume-webapp)  
 
 ### ✅ Objectives  
 - Create an Azure account using student email.  
@@ -47,42 +47,6 @@ Instead of owning physical hardware, you can rent resources from cloud providers
 - Deploy resume as a **Static Web App** on Azure.  
 - Document the entire progress.  
 - Share the milestone on LinkedIn.  
-
----
-
-### 🔎 Steps Performed  
-
-1. **Created Azure Account**  
-   - Signed up with student email to receive **$200 free credits**.  
-
-2. **Converted Resume**  
-   - Took my existing CV in PDF format.  
-   - Rebuilt it using **HTML + CSS** for clean and responsive design.  
-
-3. **Uploaded to GitHub**  
-   - Pushed project files (`index.html`) into a **public repository**.  
-
-4. **Deployed on Azure Static Web Apps**  
-   - Linked my GitHub repo with Azure Static Web Apps.  
-   - Configured branch for automatic deployment.  
-   - Verified deployment URL (web app live on Azure).  
-
-5. **Documented Progress**  
-   - Created a `README.md` in my repo.  
-   - Added explanation, steps, and screenshots of the process.  
-
-6. **Shared on LinkedIn**  
-   - Wrote a short post about my **first cloud project**, mentioning MLSA UET internship and Azure.  
-
----
-
-### 📸 Screenshots  
-(Save screenshots in the `assets/` folder)  
-
-- Azure Free Credit Activation  
-- GitHub repo upload  
-- Azure Static Web App deployment confirmation  
-- Live website screenshot  
 
 ---
 
