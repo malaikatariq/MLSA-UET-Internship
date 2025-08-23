@@ -6,53 +6,60 @@ Here is my resume built using **HTML & CSS**:
 
 Deployed Version: [Live on Azure Static Web App](https://your-azure-app-link-here) 
 
-## 🛠️ Task-01 – Getting Started with Azure  
 
-### ✅ Objectives  
-- Create an Azure account using student email.  
-- Convert CV/Resume from PDF to HTML & CSS.  
-- Upload CV files to GitHub repo.  
-- Deploy resume as a **Static Web App** on Azure.  
-- Document the entire progress.  
-- Share the milestone on LinkedIn.  
+# 🌐 Cloud Computing Internship – Task 01  
+
+### 📌 Objective  
+Deploy a personal **Resume Website** as a Static Web App using **Microsoft Azure**.  
 
 ---
 
-### 🔎 Steps Performed  
+## 🔹 Step 1: Create a Resource Group  
+1. Log in to the [Azure Portal](https://portal.azure.com/).  
+2. In the search bar, type **Resource groups** and select it.  
+3. Click **+ Create**.  
+4. Fill in the details:  
+   - **Subscription**: Free student subscription.  
+   - **Resource group name**: `MLSA-Cloud_Intern`.  
+   - **Region**: Choose nearest region (e.g., East US).  
+5. Click **Review + Create** → **Create**.  
 
-1. **Created Azure Account**  
-   - Signed up with student email to receive **$200 free credits**.  
-
-2. **Converted Resume**  
-   - Took my existing CV in PDF format.  
-   - Rebuilt it using **HTML + CSS** for clean and responsive design.  
-
-3. **Uploaded to GitHub**  
-   - Pushed project files (`index.html`) into a **public repository**.  
-
-4. **Deployed on Azure Static Web Apps**  
-   - Linked my GitHub repo with Azure Static Web Apps.  
-   - Configured branch for automatic deployment.  
-   - Verified deployment URL (web app live on Azure).  
-
-5. **Documented Progress**  
-   - Created a `README.md` in my repo.  
-   - Added explanation, steps, and screenshots of the process.  
-
-6. **Shared on LinkedIn**  
-   - Wrote a short post about my **first cloud project**, mentioning MLSA UET internship and Azure.  
+✅ Resource Group created successfully!  
+![Resource Group](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/assets/Resource_Group.png)
 
 ---
 
-### 📸 Screenshots  
-(Save screenshots in the `assets/` folder)  
+## 🔹 Step 2: Create a Static Web App  
+1. In the search bar, type **Static Web Apps**.  
+2. Click **+ Create**.  
+3. Fill in details:  
+   - **Subscription**: Free subscription.  
+   - **Resource group**: `MLSA-Cloud_Intern`.  
+   - **Name**: `resume-webapp`.  
+   - **Hosting plan**: **Free (F1)**.  
+   - **Region**: South India & Central US.
+   -  Connect with **GitHub Account**
+   -  Select the Repo and Branch 
+4. **Deployment details**:  
+   - Select **GitHub**.   
+5. Click **Review + Create** → **Create**.  
 
-- Azure Free Credit Activation  
-- GitHub repo upload  
-- Azure Static Web App deployment confirmation  
-- Live website screenshot  
+✅ Static Web App created!
+![Select Static WebAPP Service](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/assets/App_Service.png)
+![Create of Static WebApp](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/assets/Static_WebApp.png)
+![Deployment of WebApp](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/assets/Deploy_WebApp.png)
 
 ---
+
+## 🔹 Step 3: Prepare Resume Files  
+- Ensure your resume files are ready:  
+  - `index.html` → main page   
+
+---
+
+## 🔹 Step 4: Run Your Web App  
+1. Once deployment is complete, Azure generates a public URL:  
+
 
 ### 🎯 Outcome  
 - Learned about cloud basics, deployment & service models.  
