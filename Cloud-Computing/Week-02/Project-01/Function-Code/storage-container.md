@@ -11,7 +11,7 @@ Blob Storage is used to save JSON files fetched by the Azure Function every hour
 1. Go to [Azure Portal](https://portal.azure.com) → **Storage Accounts** → **Create**  
 2. Fill in the details:
    - **Subscription:** Select your subscription  
-   - **Resource Group:** Create new or use existing (e.g., `MLSA-Cloud-Project`)  
+   - **Resource Group:** Create new or use existing (e.g., `MLSA-Cloud-Intern`)  
    - **Storage account name:** Must be unique (e.g., `mlsaproject01`)  
    - **Region:** Choose closest to you  
    - **Performance:** Standard  
