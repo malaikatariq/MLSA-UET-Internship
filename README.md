@@ -22,10 +22,11 @@ MLSA-UET-Internship/
 │── README.md                  # Overview of internship (this file)
 │
 ├── Cloud-Computing/           # Cloud tasks & notes
-│   │── Task-01.md             # Example: VM Deployment
-│   │── Task-02.md             # Example: Storage & Networking
-│   │── Reflections.md         # Learnings & challenges
-│   └── assets/                # Screenshots for cloud tasks
+│   │── Week-01/
+│       │── Week-01.md            
+│       │── Task-01.md
+│       │── resume-webapp.html          
+│       └── assets/             # Screenshots for cloud tasks
 │
 ├── Cybersecurity/             # Cybersecurity tasks & notes
 │   │── Task-01.md             # Example: Nmap Scanning
