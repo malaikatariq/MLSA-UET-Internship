@@ -12,7 +12,7 @@ Blob Storage is used to save JSON files fetched by the Azure Function every hour
 2. Fill in the details:
    - **Subscription:** Select your subscription  
    - **Resource Group:** Create new or use existing (e.g., `MLSA-Cloud-Project`)  
-   - **Storage account name:** Must be unique (e.g., `project01`)  
+   - **Storage account name:** Must be unique (e.g., `mlsaproject01`)  
    - **Region:** Choose closest to you  
    - **Performance:** Standard  
    - **Redundancy (Replication):** Locally-redundant storage (LRS)  
