@@ -23,9 +23,8 @@ MLSA-UET-Internship/
 │
 ├── Cloud-Computing/           # Cloud tasks & notes
 │   │── Week-01/
-│       │── Week-01.md            
-│       │── Task-01.md
-│       │── resume-webapp.html          
+│       │── week-01.md            
+│       │── task-01.md         
 │       └── assets/             # Screenshots for cloud tasks
 │
 ├── Cybersecurity/             # Cybersecurity tasks & notes
