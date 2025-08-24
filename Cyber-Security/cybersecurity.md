@@ -1,7 +1,7 @@
 # 🔐 Cybersecurity Learning Repository
 
 Welcome to my **Cybersecurity Learning Journey** repository.  
-This repo contains weekly tasks, assignments, and notes as I practice ethical hacking, penetration testing, and security analysis step by step.  
+This repo contains weekly tasks, assignments, and notes as I practice ethical hacking step by step.  
 
 ---
 
