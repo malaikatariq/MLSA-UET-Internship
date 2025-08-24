@@ -52,8 +52,24 @@ Deploy a personal **Resume Website** as a Static Web App using **Microsoft Azure
 ---
 
 ## 🔹 Step 3: Prepare Resume Files  
-- Ensure your resume files are ready:  
-  - `index.html` → main page   
+- Ensure your resume files are ready:
+  - `index.html` → main page
+
+- **Why I add a `package.json` file:**  
+  Azure Static Web Apps uses a build system called **Oryx** to detect and build applications.  
+  Even for a simple static HTML site, Oryx expects a **build script** in your `package.json`. Without it, deployment may fail with this error:
+**`Error: Could not find either 'build' or 'build:azure' node under 'scripts' in package.json.`**
+  
+- **Solution:** Add a `package.json` file in the project root with a minimal build script:
+
+```json
+{
+  "name": "my-static-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build required for static HTML'"
+  }
+}
 
 ---
 
