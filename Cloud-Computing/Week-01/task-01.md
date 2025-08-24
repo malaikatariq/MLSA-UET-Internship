@@ -71,6 +71,8 @@ Deploy a personal **Resume Website** as a Static Web App using **Microsoft Azure
   }
 }
 
+
+
 ---
 
 ## 🔹 Step 4: Run Your Web App  
