@@ -44,7 +44,12 @@ MLSA-UET-Internship/
 │       └── assets/             # Screenshots for cloud tasks
 │
 ├── Cybersecurity/             # Cybersecurity tasks & notes
-│   │── Task-01.md             # Example: Nmap Scanning
-│   │── Task-02.md             # Example: Vulnerability Assessment
-│   │── Reflections.md
-│   └── assets/                # Screenshots for cybersecurity tasks
+│   │── Week-01/             
+│       │── week-01.md            
+│       │── task-01.md         
+│       └── assets/             # Screenshots for cybersecurity tasks
+│   │── Week-02/             
+│       │── week-02.md            
+│       │── task-02.md         
+│       └── assets/             # Screenshots for cybersecurity tasks
+
