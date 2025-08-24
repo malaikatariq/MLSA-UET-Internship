@@ -1,7 +1,7 @@
 # MLSA UET Peshawar – Seekho Aur Barho Internship  
 **Duration:** 5 Weeks (August 2025 – Ongoing)  
 **Domain:** Cloud Computing & Cybersecurity  
-**Type:** Task-Based Internship  
+**Type:** Task-Based Learning Internship  
 
 ---
 
