@@ -70,9 +70,7 @@ Deploy a personal **Resume Website** as a Static Web App using **Microsoft Azure
     "build": "echo 'No build required for static HTML'"
   }
 }
-
-
-
+```
 ---
 
 ## 🔹 Step 4: Run Your Web App  
@@ -82,5 +80,4 @@ Deploy a personal **Resume Website** as a Static Web App using **Microsoft Azure
 ### 🎯 Outcome  
 - Learned about cloud basics, deployment & service models.  
 - Gained hands-on experience with **Azure Static Web Apps**.  
-- Successfully deployed my **Resume website** on Azure.  
-
+- Successfully deployed my **Resume website** on Azure.
