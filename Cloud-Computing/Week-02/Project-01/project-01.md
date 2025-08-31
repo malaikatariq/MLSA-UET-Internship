@@ -1,78 +1,203 @@
-
 # Project 1: News Headlines Dashboard
 
-This is a **serverless news dashboard** built on **Azure** using free-tier services.  
-It fetches top headlines from a free **News API** every hour, stores them in **Azure Blob Storage**, and displays them in a simple web dashboard with category filters.
+This project demonstrates a simple **Azure-based news fetching system**. It uses **Azure Functions**, **Blob Storage**, and a **frontend UI** to automatically fetch, store, and display the latest news headlines.
 
 ---
 
-## 📂 Repo Structure
+## Project Goal
 
-- [`function-code/`](function-code/) → Azure Function backend (fetches news & stores JSON in Blob)  
-- [`frontend/`](frontend/) → HTML, CSS, and JS for the news dashboard  
-- [`images/`](images/) → Optional screenshots for documentation or dashboard  
-- [`docs/`](docs/) → Optional architecture diagrams or project notes  
+The system flow is as follows:
 
----
+1. **Time Trigger Function** → Automatically runs every X minutes to fetch news.
+2. **Fetch News from NewsAPI** → Retrieves the latest headlines.
+3. **Store News in Blob Storage** → Saves news JSON files for persistent access.
+4. **UI (Web Page)** → Reads news from Blob Storage (directly or via HTTP Function) and displays it to users.
 
-## ⚡ Features
-
-- Hourly fetch of top news headlines  
-- Stores JSON files in `news-data/{yyyy}/{MM}/{dd}/{HH}/headlines.json`  
-- Frontend displays latest headlines with links and publish time  
-- Category filter (Business, Tech, Sports, etc.)  
-- Manual "Refresh Now" button using HTTP trigger function  
+This setup combines a **backend (Azure Functions)**, **storage**, and **frontend (UI)**.
 
 ---
 
-## 🏗️ Setup Instructions
+## Step 1: Azure Setup
 
-### 1️⃣ Azure Function (Backend)
+### 1.1 Function App
 
-1. Go to **Azure Portal → Function App → Create**  
-   - Runtime: Node.js or Python  
-   - Hosting: Consumption Plan (Free)  
-   - Storage: Your Storage Account  
+A **Function App** is a container for all your Azure Functions.
 
-2. Add **Timer Trigger Function** (runs hourly)  
+**Steps:**
+1. Go to **Azure Portal → Create Function App**
+2. Settings:
+   - **Runtime**: Node.js (simpler for beginners)
+   - **Hosting Plan**: Consumption (scales automatically, cost-effective)
+   - **Region**: Choose the nearest one
+3. Review + Create → Wait for deployment
 
-3. Add your **Environment Variables** (Application Settings):
-   - `NEWS_API_KEY` → Your News API Key from [NewsAPI.org](https://newsapi.org)  
-   - `AZURE_STORAGE_CONNECTION_STRING` → Connection string from your Azure Storage  
+### 1.2 Storage Account
 
-4. Deploy the code from [`function-code/`](function-code/)
+Azure Functions require storage to work.
 
----
-
-### 2️⃣ Azure Storage
-
-1. Create a **container** in your storage account called `news-data`  
-2. The Function will save JSON files in this container automatically  
-
----
-
-### 3️⃣ Frontend Dashboard
-
-1. Open [`frontend/`](frontend/) folder  
-2. Update `script.js` with the URL to the **latest blob**  
-3. Deploy `frontend/` to **Azure App Service** (Free Plan)  
-   - Deployment options: GitHub, ZIP, or VS Code deployment  
+**Steps:**
+1. Go to **Azure → Storage Account → Create**
+2. Note the following:
+   - **Connection string** → Used in your code to save/read blob files
+   - **Container name** → Where JSON files will live (e.g., `newscontainer`)
 
 ---
 
-### 4️⃣ Optional Enhancements
+## Step 2: Time Trigger Function
 
-- Add **HTTP Trigger Function** for manual refresh  
-- Store API Key in **Azure Key Vault**  
-- Add **pagination** for large number of headlines  
+### 2.1 What is it?
 
+A **time-triggered function** automatically runs on a schedule, e.g., every 30 minutes or 1 hour.
+
+### 2.2 Schedule
+
+Azure uses CRON expressions:
+```
+
+- Runs every 30 minutes  
+- Format: `second minute hour day month day-of-week`
+
+### 2.3 Sample Code (`FetchNews`)
+
+```javascript
+const axios = require('axios'); // NewsAPI calls
+const { BlobServiceClient } = require('@azure/storage-blob'); // Save data in blob
+
+module.exports = async function (context, myTimer) {
+    const NEWS_API_KEY = "YOUR_NEWSAPI_KEY";
+    const BLOB_CONN_STRING = "YOUR_BLOB_CONNECTION_STRING";
+    const CONTAINER_NAME = "newscontainer";
+    const BLOB_NAME = "headlines.json";
+
+    // Fetch news
+    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_API_KEY}`;
+    let newsData;
+    try {
+        const response = await axios.get(url);
+        newsData = response.data;
+        context.log("News fetched successfully!");
+    } catch (err) {
+        context.log("Error fetching news:", err.message);
+        return;
+    }
+
+    // Save news to Blob Storage
+    try {
+        const blobServiceClient = BlobServiceClient.fromConnectionString(BLOB_CONN_STRING);
+        const containerClient = blobServiceClient.getContainerClient(CONTAINER_NAME);
+
+        if (!(await containerClient.exists())) await containerClient.create();
+
+        const blockBlobClient = containerClient.getBlockBlobClient(BLOB_NAME);
+        await blockBlobClient.upload(JSON.stringify(newsData), Buffer.byteLength(JSON.stringify(newsData)));
+        context.log("News saved to blob successfully!");
+    } catch (err) {
+        context.log("Error saving blob:", err.message);
+    }
+};
+```
 ---
+### Step 3: Optional HTTP Trigger Function
+- Purpose
 
-## 📷 Screenshots
+- Allows the frontend UI to easily access the news JSON.
 
-![Example Dashboard](images/example-screenshot.png)
+- Serves the blob content as an HTTP response.
 
+- Sample Code (GetNews):
+```
+const { BlobServiceClient } = require('@azure/storage-blob');
+
+module.exports = async function (context, req) {
+    const BLOB_CONN_STRING = "YOUR_BLOB_CONNECTION_STRING";
+    const CONTAINER_NAME = "newscontainer";
+    const BLOB_NAME = "headlines.json";
+
+    try {
+        const blobServiceClient = BlobServiceClient.fromConnectionString(BLOB_CONN_STRING);
+        const containerClient = blobServiceClient.getContainerClient(CONTAINER_NAME);
+        const blockBlobClient = containerClient.getBlockBlobClient(BLOB_NAME);
+
+        const downloadBlockBlobResponse = await blockBlobClient.download(0);
+        const downloaded = await streamToString(downloadBlockBlobResponse.readableStreamBody);
+
+        context.res = { 
+            body: downloaded,
+            headers: { "Content-Type": "application/json" } 
+        };
+    } catch (err) {
+        context.res = { status: 500, body: "Error fetching news" };
+    }
+};
+
+async function streamToString(readableStream) {
+    return new Promise((resolve, reject) => {
+        const chunks = [];
+        readableStream.on("data", (data) => chunks.push(data.toString()));
+        readableStream.on("end", () => resolve(chunks.join("")));
+        readableStream.on("error", reject);
+    });
+}
+```
 ---
+### Step 4: Troubleshooting
+**Package Installation**
+1- Create package.json in the function folder:
+```
+{
+  "name": "fetch-news-function",
+  "version": "1.0.0",
+  "description": "Fetch news and save to blob",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "@azure/storage-blob": "^14.11.0"
+  }
+}
+```
+---
+2-Install packages using Kudu Console:
+```
+cd site/wwwroot/FetchNews
+npm install
+```
+---
+**3- Verify node_modules exists.**
+
+- HTTP Function Package Fix:
+```
+{
+  "name": "getnews",
+  "version": "1.0.0",
+  "description": "HTTP trigger for fetching news from blob",
+  "main": "index.js",
+  "dependencies": {
+    "@azure/storage-blob": "12.14.0"
+  }
+}
+```
+---
+### Step 5: Summary of Flow
+
+- Timer Trigger Function runs every 30 minutes → fetches news → saves to blob.
+
+- HTTP Trigger Function serves JSON from blob.
+
+- UI page calls HTTP function → displays news.
+
+- Tech stack:
+
+ - Node.js for backend
+
+ - Azure Blob Storage for persistent data
+
+ - HTML + JavaScript for frontend
+---
+### Links
+
+[**Web App**] (https://happy-ground-0d5189903.2.azurestaticapps.net)
+
+[**UI Code Repository:**] (https://github.com/malaikatariq/mlsa-dashboard-project)
 
 ## 📚 Learning Outcomes
 
@@ -84,9 +209,3 @@ It fetches top headlines from a free **News API** every hour, stores them in **A
 
 ---
 
-## 🔗 Quick Links
-
-- [Function Code](function-code/)  
-- [Frontend Dashboard](frontend/)  
-- [Images](images/)  
-- [Documentation / Architecture](docs/)
