@@ -16,9 +16,9 @@ The focus is on **Microsoft Azure services**, hands-on labs, and reflections on 
 ## 📂 Structure
 - [**Week-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/week-01.md) → What is Cloud? Its Models (public, provate, hybrid) and service models (PaaS, IaaS, SaaS).
 - [**Task-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Create a Resume Web App.
-- [**Week-02.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Create a Resume Web App.
-- [**Az-Fundamental-Path.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Create a Resume Web App.
-- [**Project-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Create a Resume Web App.
+- [**Week-02.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/week-02.md) → Azure architectual Components, Compute & Networking, Storage, Identity, Access and Security.
+- [**Az-Fundamental-Path.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Azure Architecture Services.
+- [**Project-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/project-01.md) → Create a News Headlines Dashboard Project.
   
 ---
 
