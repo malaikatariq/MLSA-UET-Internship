@@ -195,10 +195,17 @@ npm install
 ---
 ### Links
 
-[**Web App**] (https://happy-ground-0d5189903.2.azurestaticapps.net)
+**Web App**[](https://happy-ground-0d5189903.2.azurestaticapps.net)
 
-[**UI Code Repository:**] (https://github.com/malaikatariq/mlsa-dashboard-project)
+**UI Code Repository:**[](https://github.com/malaikatariq/mlsa-dashboard-project)
 
+---
+### Screenshots:
+**News Dashboard**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/News%20Dashboard%20UI.png)
+**Static Web App**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Static%20Web%20App.png)
+**Timer Function**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Timer%20Funtion.png) 
+
+---
 ## 📚 Learning Outcomes
 
 - Azure Functions (serverless compute)  
