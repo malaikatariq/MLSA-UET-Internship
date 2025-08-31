@@ -201,9 +201,9 @@ npm install
 
 ---
 ### Screenshots:
-**News Dashboard**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/News%20Dashboard%20UI.png)
-**Static Web App**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Static%20Web%20App.png)
-**Timer Function**[](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Timer%20Funtion.png) 
+**News Dashboard**![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/News%20Dashboard%20UI.png)
+**Static Web App**![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Static%20Web%20App.png)
+**Timer Function**![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/assets/Timer%20Funtion.png) 
 
 ---
 ## 📚 Learning Outcomes
