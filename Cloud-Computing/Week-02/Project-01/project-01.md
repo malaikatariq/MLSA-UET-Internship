@@ -195,9 +195,9 @@ npm install
 ---
 ### Links
 
-**Web App**[](https://happy-ground-0d5189903.2.azurestaticapps.net)
+[**Web App**](https://happy-ground-0d5189903.2.azurestaticapps.net)
 
-**UI Code Repository:**[](https://github.com/malaikatariq/mlsa-dashboard-project)
+[**UI Code Repository:**](https://github.com/malaikatariq/mlsa-dashboard-project)
 
 ---
 ### Screenshots:
