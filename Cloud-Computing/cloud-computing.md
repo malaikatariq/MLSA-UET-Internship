@@ -19,6 +19,8 @@ The focus is on **Microsoft Azure services**, hands-on labs, and reflections on 
 - [**Week-02.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/week-02.md) → Azure architectual Components, Compute & Networking, Storage, Identity, Access and Security.
 - [**Az-Fundamental-Path.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-01/task-01.md) → Azure Architecture Services.
 - [**Project-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-02/Project-01/project-01.md) → Create a News Headlines Dashboard Project.
+- [**Week-04**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-04/week-04.md) → Quiz Activity & Project
+- [**Project-02**](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cloud-Computing/Week-04/Project-02) → Image to Text Extraction Web App
   
 ---
 
