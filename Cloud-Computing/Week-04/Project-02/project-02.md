@@ -159,9 +159,9 @@ function uploadImage() {
 ---
 ## Screenshots:
 
-![Computer Vision]()
-![Function App]()
-![]()
-![]()
+![Computer Vision](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-04/Project-02/assets/Computer%20Vision.png)
+![Function App](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-04/Project-02/assets/Function%20App.png)
+![HTTP Function](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-04/Project-02/assets/HTTP%20Function.png)
+![Web UI](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cloud-Computing/Week-04/Project-02/assets/Web%20UI.png)
 
 ---
