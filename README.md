@@ -33,7 +33,8 @@ MLSA-UET-Internship/
 │          │── module-01.md
 │          │── module-02.md
 │          │── module-03.md
-│          │── module-04.md          
+│          │── module-04.md
+│   │── Week-04/        
 │       │── Project-01/
 │          │── project-01.md         
 │          └── assets/             # Screenshots for cloud tasks
