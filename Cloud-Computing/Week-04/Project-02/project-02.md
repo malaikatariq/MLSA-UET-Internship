@@ -144,8 +144,9 @@ function uploadImage() {
 
 
 ## **Links**  
-[Repo Url](https://github.com/malaikatariq/image-analyzer)
-[Web App Url](https://yellow-mushroom-0f3e5fb03.1.azurestaticapps.net/)
+[**Repo Url**](https://github.com/malaikatariq/image-analyzer)
+
+[**Web App Url**](https://yellow-mushroom-0f3e5fb03.1.azurestaticapps.net/)
 
 
 ---
