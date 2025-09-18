@@ -15,13 +15,13 @@ The main objectives of this repository are:
 ---
 
 ## 📂 Structure
-- [**Week-01-OS-Cybersecurity-Fundamentals/**][Week-01-OS-Basics-Cookies/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-01)
+- [**Week-01-OS-Cybersecurity-Fundamentals/**](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-01)
 - [**Task-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-01/task-01.md)
-- [**Week-02-Reconnaissance/**]([Week-02-Reconnaissance/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-02))
+- [**Week-02-Reconnaissance/**](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-02)
 - [**Task-02.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-02/task-02.md)
-- [**Week-03-System-Hacking/**]([Week-03-System-Hacking/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-03))
+- [**Week-03-System-Hacking/**](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-03)
 - [**Task-03.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/task-03.md)
-- [**Week-04-Password-Cracking/**]([Week-04-Password-Cracking/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-04))
+- [**Week-04-Password-Cracking/**](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-04)
 - [**Task-04.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/task-04.md)
 - [**Project-Firewall-Configuration/**]([Project-Firewall-Configuration/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Project))
 
