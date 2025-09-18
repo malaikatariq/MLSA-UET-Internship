@@ -1,4 +1,4 @@
-# **Weekly Internship Task Report: Defensive Reconnaissance & Vulnerability Assessment**
+# **Task-02 Report: Defensive Reconnaissance & Vulnerability Assessment**
 
 ## **Disclaimer**
 
