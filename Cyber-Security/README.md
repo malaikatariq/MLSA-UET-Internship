@@ -15,7 +15,7 @@ The main objectives of this repository are:
 ---
 
 ## 📂 Structure
-- [**Week-01-OS-Cybersecurity-Fundamentals/**]([Week-01-OS-Basics-Cookies/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-01))
+- [**Week-01-OS-Cybersecurity-Fundamentals/**][Week-01-OS-Basics-Cookies/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-01)
 - [**Task-01.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-01/task-01.md)
 - [**Week-02-Reconnaissance/**]([Week-02-Reconnaissance/](https://github.com/malaikatariq/MLSA-UET-Internship/tree/main/Cyber-Security/Week-02))
 - [**Task-02.md**](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-02/task-02.md)
