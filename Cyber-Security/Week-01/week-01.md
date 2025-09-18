@@ -12,8 +12,6 @@ This README summarizes the Week 1 class and labs. It covers basic operating syst
 
 ## Learning objectives
 
-By the end of Week 1 you should be able to:
-
 * Differentiate between Windows, UNIX-based, and Linux-based operating systems (examples: Kali, Ubuntu, Parrot).
 * Choose reasonable CPU clock and VM sizing for small lab VMs (e.g., 2–2.5 GHz for 1–2 VMs depending on cores/RAM).
 * Explain types of hackers and legal/ethical boundaries.
