@@ -67,10 +67,18 @@ The Windows portion utilized the `NetSecurity` module in PowerShell to interact 
 3.  An interactive menu was presented for users to select which rule to create.
 
 **Screenshot: Windows PowerShell script output showing the interactive menu.**
-*(Insert your screenshot of the PowerShell script running here)*
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/PowerShell.png)
 
 **Screenshot: Result of `ping` command before and after implementing the 'Block ICMP' rule.**
-*(Insert your comparison screenshot of successful ping vs. "Request timed out")*
+**Before**
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/Before%20ICMP.png)
+
+**After**
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/After%20ICMP%20Block.png)
+
 
 ### **4.2. Linux Firewall Configuration (via iptables)**
 
@@ -88,10 +96,17 @@ The Linux portion used the `iptables` utility, the classic command-line interfac
 3.  The script was run with `sudo` privileges to modify firewall rules.
 
 **Screenshot: Terminal output after running the Linux bash script, showing the new iptables rules.**
-*(Insert your screenshot of the terminal after running `sudo iptables -L -v -n`)*
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/IPTABLE.png)
 
 **Screenshot: Web browser failing to load an HTTP site after the rule is applied.**
-*(Insert your screenshot of the browser error, e.g., "This site can’t be reached")*
+**Before**
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/Before%20HTTP.png)
+
+**After**
+
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Project/assets/After%20HTTP%20Block.png)
 
 ## **5. Automation Scripts**
 
