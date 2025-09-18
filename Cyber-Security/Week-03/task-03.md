@@ -65,11 +65,15 @@ To demonstrate how easily login credentials can be intercepted on a local networ
     `uname=test&pass=test`
 *   **HTTPS Contrast:** Attempts to login to HTTPS sites (like Gmail) resulted in encrypted, unreadable data, highlighting the effectiveness of encryption.
 
-**Screenshot 1:** Ettercap interface showing the ARP poisoning targets and active MitM attack.
-*(Insert your screenshot here)*
+**Screenshots:** Ettercap interface showing the ARP poisoning targets and active MitM attack.
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Ettercap3.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Ettercap1.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Ettercap2.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/ARP.png)
 
-**Screenshot 2:** A captured HTTP packet in Ettercap showing `uname=test&pass=test` in plain text.
-*(Insert your screenshot here)*
+**Screenshots:** A captured HTTP packet in Ettercap showing `uname=test&pass=test` in plain text.
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Captured1.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Captured2.png)
 
 ### **Defensive Recommendations**
 
@@ -105,11 +109,13 @@ The keylogger successfully captured a wide array of sensitive data:
 *   **Website Monitoring:** Recorded URLs of all visited websites.
 *   **System Activity:** Captured events like user logon and logoff.
 
-**Screenshot 3:** The KidLogger dashboard showing a log of captured keystrokes from Notepad.
-*(Insert your screenshot here)*
+**Screenshots:** The KidLogger dashboard showing a log of captured keystrokes from Notepad.
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Notepad.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Captured%20D1.png)
 
-**Screenshot 4:** The KidLogger dashboard showing the list of applications executed and websites visited.
-*(Insert your screenshot here)*
+**Screenshots:** The KidLogger dashboard showing the list of applications executed and websites visited.
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Captured%20D2.png)
+![](https://github.com/malaikatariq/MLSA-UET-Internship/blob/main/Cyber-Security/Week-03/assets/Captured%20D3.png)
 
 ### **Defensive Recommendations**
 
