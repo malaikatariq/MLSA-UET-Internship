@@ -212,6 +212,4 @@ lsblk
 * **NAND:** Flash memory technology used in SSDs and USB drives
 * **SYN / ACK:** TCP control flags used in handshake
 
----
 
-**If you want:** I can convert this README into a shorter **LinkedIn summary**, generate `README.md` file content for your GitHub repo (ready to copy/paste), or create a Week‑by‑Week README series for the whole internship. Just tell me which format you prefer.
