@@ -52,11 +52,9 @@ MLSA-UET-Internship/
 │   │── Week-02/             
 │       │── README.md            
 │       │── task-02.md         
-│       └── assets/             # Screenshots for cybersecurity tasks
 │   │── Week-03/             
 │       │── README.md            
 │       │── task-03.md         
-│       └── assets/             # Screenshots for cybersecurity tasks
 │   │── Week-04/             
 │       │── README.md            
 │       │── task-04.md         
