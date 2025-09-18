@@ -34,6 +34,8 @@ MLSA-UET-Internship/
 │          │── module-02.md
 │          │── module-03.md
 │          │── module-04.md
+│   │── Week-03/
+│       │── README.md            
 │   │── Week-04/
 │       │── week-04.md      
 │       │── Project-01/
@@ -45,10 +47,23 @@ MLSA-UET-Internship/
 │
 ├── Cybersecurity/             # Cybersecurity tasks & notes
 │   │── Week-01/             
-│       │── week-01.md            
+│       │── README.md            
 │       │── task-01.md         
-│       └── assets/             # Screenshots for cybersecurity tasks
 │   │── Week-02/             
-│       │── week-02.md            
+│       │── README.md            
 │       │── task-02.md         
 │       └── assets/             # Screenshots for cybersecurity tasks
+│   │── Week-03/             
+│       │── README.md            
+│       │── task-03.md         
+│       └── assets/             # Screenshots for cybersecurity tasks
+│   │── Week-04/             
+│       │── README.md            
+│       │── task-04.md         
+│       └── assets/             # Screenshots for cybersecurity tasks
+│   │── Project/             
+│       │── README.md                   
+│       └── assets/             # Screenshots for cybersecurity tasks
+│       └── firewall-tool.ps1            
+│       └── firewall-tool.sh 
+
